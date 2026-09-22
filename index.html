@@ -53,7 +53,8 @@ a{
     color:inherit;
 }
 
-img{
+img,
+video{
     max-width:100%;
     display:block;
 }
@@ -189,7 +190,7 @@ nav{
     color:#fff;
 }
 
-/* BRAND IMAGE */
+/* BRAND VIDEO */
 .brand-card{
     background:rgba(255,255,255,.07);
     border:1px solid rgba(255,255,255,.16);
@@ -198,11 +199,12 @@ nav{
     box-shadow:0 30px 90px rgba(0,0,0,.28);
 }
 
-.brand-card img{
+.brand-card video{
     width:100%;
     aspect-ratio:1/1;
     object-fit:cover;
     object-position:center;
+    display:block;
     border-radius:20px;
     background:#fff;
 }
@@ -746,13 +748,24 @@ My website ↗
 </div>
 
 
-<!-- PROFILE / BRAND IMAGE -->
+<!-- PROFILE / BRAND VIDEO -->
 <div class="brand-card">
 
-<img
-src="file_00000000136c82109ee8f140c9f3fc1b.png"
-alt="John Umoh Tech — Connect Innovate Elevate"
->
+<video
+autoplay
+muted
+loop
+playsinline
+preload="metadata"
+aria-label="John Umoh Tech video">
+
+<source
+src="Video.Guru_20260917_012536296.mp4"
+type="video/mp4">
+
+Your browser does not support the video element.
+
+</video>
 
 <div class="brand-caption">
 <strong>John Umoh Tech</strong>
@@ -782,7 +795,6 @@ customer service, digital engagement, field data and professional
 development across HR, digital marketing and product management.
 </p>
 
-
 <div class="grid">
 
 <div class="card">
@@ -794,7 +806,6 @@ communication.
 </p>
 </div>
 
-
 <div class="card">
 <h3>Human Resources</h3>
 <p>
@@ -803,7 +814,6 @@ onboarding, employee development, documentation, compliance
 and internal communication.
 </p>
 </div>
-
 
 <div class="card">
 <h3>Product Management</h3>
@@ -874,7 +884,6 @@ Professional <span class="accent">experience</span>
 Experience across digital communications, administration,
 customer-facing operations, field data and organizational support.
 </p>
-
 
 <div class="experience">
 
@@ -1179,7 +1188,6 @@ communication, data management, and administrative support.
 
 </article>
 
-
 </div>
 
 </section>
@@ -1308,9 +1316,7 @@ Academic and professional credentials supporting my business,
 HR, product and digital career.
 </p>
 
-
 <div class="two-col">
-
 
 <div class="list-card">
 
@@ -1468,9 +1474,7 @@ Community-facing roles supporting technology, financial literacy,
 digital engagement and professional opportunities.
 </p>
 
-
 <div class="leadership">
-
 
 <div class="role">
 
@@ -1528,7 +1532,6 @@ within student and digital communities.
 </p>
 
 </div>
-
 
 </div>
 
@@ -1610,7 +1613,9 @@ rel="noopener">
 LinkedIn ↗
 </a>
 
-    </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1627,4 +1632,10 @@ Digital Marketing • HR • Product Management
 </footer>
 
 </body>
-    </html>
+</html>
+
+Important: Keep the video file in the same folder as your HTML file and use this exact filename:
+
+"Video.Guru_20260917_012536296.mp4"
+
+The video is set to autoplay + muted + loop + playsinline, so it should behave like the previous photo frame while playing continuously.
